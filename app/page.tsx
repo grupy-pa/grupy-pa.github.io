@@ -1,7 +1,25 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Calendar, Users, Code, Coffee, ArrowRight, Github, Twitter, Mail, MapPin, Clock, Star } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Calendar,
+  Users,
+  Code,
+  Coffee,
+  ArrowRight,
+  Github,
+  Twitter,
+  Mail,
+  MapPin,
+  Clock,
+  Star,
+} from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -11,13 +29,30 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
-              <svg width="40" height="40" viewBox="0 0 100 100" className="drop-shadow-sm">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 100 100"
+                className="drop-shadow-sm"
+              >
                 <defs>
-                  <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient
+                    id="blue-gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stopColor="#306998" />
                     <stop offset="100%" stopColor="#4B8BBE" />
                   </linearGradient>
-                  <linearGradient id="yellow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient
+                    id="yellow-gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stopColor="#FFD43B" />
                     <stop offset="100%" stopColor="#FFE873" />
                   </linearGradient>
@@ -35,18 +70,32 @@ export default function HomePage() {
               </svg>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground font-heading">Python Pará</h1>
-              <p className="text-xs text-muted-foreground">Comunidade Python do Pará</p>
+              <h1 className="text-2xl font-bold text-foreground font-heading">
+                Python Pará
+              </h1>
+              <p className="text-xs text-muted-foreground">
+                Comunidade de usuários e desenvolvedores que utilizam Python no
+                Pará 🏳️‍🌈
+              </p>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#eventos" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+            <a
+              href="#eventos"
+              className="text-muted-foreground hover:text-foreground transition-colors font-medium"
+            >
               Eventos
             </a>
-            <a href="#recursos" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+            <a
+              href="#recursos"
+              className="text-muted-foreground hover:text-foreground transition-colors font-medium"
+            >
               Recursos
             </a>
-            <a href="#comunidade" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+            <a
+              href="#comunidade"
+              className="text-muted-foreground hover:text-foreground transition-colors font-medium"
+            >
               Comunidade
             </a>
             <Button className="rounded-full px-6">Participar</Button>
@@ -59,13 +108,30 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
         <div className="container mx-auto text-center max-w-5xl relative">
           <div className="flex justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 100 100" className="drop-shadow-lg">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 100 100"
+              className="drop-shadow-lg"
+            >
               <defs>
-                <linearGradient id="hero-blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient
+                  id="hero-blue-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
                   <stop offset="0%" stopColor="#306998" />
                   <stop offset="100%" stopColor="#4B8BBE" />
                 </linearGradient>
-                <linearGradient id="hero-yellow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient
+                  id="hero-yellow-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
                   <stop offset="0%" stopColor="#FFD43B" />
                   <stop offset="100%" stopColor="#FFE873" />
                 </linearGradient>
@@ -83,19 +149,18 @@ export default function HomePage() {
             </svg>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-heading">
-            Tecnologia para todos! 🌟
+            Python Pará
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
-            A <strong>Python Pará</strong> existe para democratizar a tecnologia na nossa região! 🚀
-            <br />
-            Acreditamos que <strong>programação é para todo mundo</strong> - independente de idade, gênero, cor ou
-            origem social.
-            <br />
+            Comunidade de usuários e desenvolvedores que utilizam Python no Pará
+            🏳️‍🌈
             <span className="text-lg">
-              Juntos, estamos construindo um <strong>ecossistema tech mais diverso e inclusivo</strong> no Pará! ✊
+              Juntos, estamos construindo um{" "}
+              <strong>ecossistema tech mais diverso e inclusivo</strong> no
+              Pará! ✊
             </span>
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
               <Users className="mr-2 w-5 h-5" />
               Começar minha jornada tech! 🎯
@@ -109,47 +174,81 @@ export default function HomePage() {
               <Calendar className="mr-2 w-5 h-5" />
               Conhecer nossa missão
             </Button>
-          </div>
+          </div> */}
 
           <div className="flex flex-wrap justify-center gap-3">
-            <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full">
+            <Badge
+              variant="secondary"
+              className="px-4 py-2 text-sm rounded-full"
+            >
               <MapPin className="w-4 h-4 mr-1" />
               Todo o Pará 🌴
             </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full">
+            <Badge
+              variant="secondary"
+              className="px-4 py-2 text-sm rounded-full"
+            >
               <Star className="w-4 h-4 mr-1" />
               100% gratuito e inclusivo ❤️
             </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full">
+            <Badge
+              variant="secondary"
+              className="px-4 py-2 text-sm rounded-full"
+            >
               <Clock className="w-4 h-4 mr-1" />
-              Oportunidades toda semana
+              Encontros periódicos ⏰
             </Badge>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10">
+      {/* Stats Section IS HIDDEN */}
+      <section
+        className="py-20 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10"
+        style={{ display: "none" }}
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 font-heading">Transformando vidas através da tecnologia! 💪</h2>
-            <p className="text-muted-foreground">Nosso impacto na comunidade paraense</p>
+            <h2 className="text-3xl font-bold mb-4 font-heading">
+              Transformando vidas através da tecnologia! 💪
+            </h2>
+            <p className="text-muted-foreground">
+              Nosso impacto na comunidade paraense
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-primary mb-2 font-heading">60%</div>
-              <div className="text-muted-foreground text-lg">Mulheres e pessoas não-binárias</div>
-              <div className="text-sm text-muted-foreground mt-2">Quebrando barreiras na tech!</div>
+              <div className="text-5xl font-bold text-primary mb-2 font-heading">
+                60%
+              </div>
+              <div className="text-muted-foreground text-lg">
+                Mulheres e pessoas não-binárias
+              </div>
+              <div className="text-sm text-muted-foreground mt-2">
+                Quebrando barreiras na tech!
+              </div>
             </div>
             <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-primary mb-2 font-heading">85+</div>
-              <div className="text-muted-foreground text-lg">Pessoas conseguiram primeiro emprego tech</div>
-              <div className="text-sm text-muted-foreground mt-2">Mudando vidas e famílias</div>
+              <div className="text-5xl font-bold text-primary mb-2 font-heading">
+                85+
+              </div>
+              <div className="text-muted-foreground text-lg">
+                Pessoas conseguiram primeiro emprego tech
+              </div>
+              <div className="text-sm text-muted-foreground mt-2">
+                Mudando vidas e famílias
+              </div>
             </div>
             <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-primary mb-2 font-heading">12</div>
-              <div className="text-muted-foreground text-lg">Cidades do interior alcançadas</div>
-              <div className="text-sm text-muted-foreground mt-2">Levando tech para todo o Pará</div>
+              <div className="text-5xl font-bold text-primary mb-2 font-heading">
+                12
+              </div>
+              <div className="text-muted-foreground text-lg">
+                Cidades do interior alcançadas
+              </div>
+              <div className="text-sm text-muted-foreground mt-2">
+                Levando tech para todo o Pará
+              </div>
             </div>
           </div>
         </div>
@@ -159,9 +258,12 @@ export default function HomePage() {
       <section id="eventos" className="py-24 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading">Eventos que transformam! 🌈</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading">
+              Próximo Eventos{" "}
+            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Nossos encontros são pensados para acolher, incluir e empoderar. Venha como você é - aqui você tem espaço!
+              Nossos encontros são pensados para acolher, incluir e empoderar.
+              Venha como você é - aqui você tem espaço!
             </p>
           </div>
 
@@ -169,81 +271,57 @@ export default function HomePage() {
             <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 rounded-2xl border-2">
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-3">
-                  <Badge className="bg-primary/10 text-primary border-primary/20">Inclusão</Badge>
+                  <Badge className="bg-primary/10 text-primary border-primary/20">
+                    Inclusão
+                  </Badge>
                   <Calendar className="w-5 h-5 text-muted-foreground" />
                 </div>
-                <CardTitle className="text-xl font-heading">PyLadies: Mulheres na Tech 👩‍💻</CardTitle>
-                <CardDescription className="text-base">Sábado, 15 de Janeiro • 14:00</CardDescription>
+                <CardTitle className="text-xl font-heading">
+                  I Meetup PyData Pará
+                </CardTitle>
+                <CardDescription className="text-base">
+                  Sábado, 06/09/2025 9h às 13h CESUPA - Campus José Malcher
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Encontro especial para mulheres e pessoas não-binárias. Vamos falar sobre carreira, networking e
-                  quebrar estereótipos juntas! 💪
+                  O PyData é uma comunidade de pessoas desenvolvedoras e
+                  usuárias de ferramentas open source voltado à ciência de
+                  dados, principalmente usando a linguagem de programação
+                  Python. É um programa apoiado pela NumFocus e um evento
+                  gratuito idealizado pela comunidade e para a comunidade.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
                   <Users className="w-4 h-4" />
                   <span>Ambiente 100% acolhedor e seguro</span>
                 </div>
-                <Button className="w-full rounded-full">Quero participar! 🙋‍♀️</Button>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  Quero participar! 🙋‍♀️
+                </a>
+                {/* <Button onClick={function (){
+                  window.open('https://www.meetup.com/pydata-para/events/310374256/', '_blank')
+                }} className="w-full rounded-full">Quero participar! 🙋‍♀️</Button> */}
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 rounded-2xl border-2">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between mb-3">
-                  <Badge variant="outline" className="border-accent text-accent">
-                    Iniciantes
-                  </Badge>
-                  <Calendar className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <CardTitle className="text-xl font-heading">Python do Zero ao Emprego 🎯</CardTitle>
-                <CardDescription className="text-base">Quinta-feira, 20 de Janeiro • 19:00</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Nunca programou? Perfeito! Workshop gratuito para quem quer mudar de vida através da tecnologia. Sem
-                  pré-requisitos! 🌱
-                </p>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
-                  <Users className="w-4 h-4" />
-                  <span>Material e mentoria inclusos</span>
-                </div>
-                <Button className="w-full rounded-full">Começar agora! 🚀</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 rounded-2xl border-2">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between mb-3">
-                  <Badge className="bg-accent/10 text-accent border-accent/20">Interior</Badge>
-                  <Calendar className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <CardTitle className="text-xl font-heading">Tech Tour: Santarém 🛣️</CardTitle>
-                <CardDescription className="text-base">Domingo, 25 de Janeiro • 16:00</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Levando tecnologia para o interior! Workshop presencial em Santarém com foco em oportunidades locais.
-                  🌍
-                </p>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
-                  <Users className="w-4 h-4" />
-                  <span>Transporte e alimentação gratuitos</span>
-                </div>
-                <Button className="w-full rounded-full">Garantir vaga! 🎫</Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
-      {/* Recursos */}
-      <section id="recursos" className="py-24 px-4 bg-gradient-to-br from-muted/30 to-muted/10">
+      {/* Recursos IS HIDDEN */}
+      <section
+        id="recursos"
+        className="py-24 px-4 bg-gradient-to-br from-muted/30 to-muted/10"
+        style={{ display: "none" }}
+      >
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading">Recursos para sua transformação 🎓</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading">
+              Recursos para sua transformação 🎓
+            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Criamos esses recursos pensando em quem está começando e quer crescer na tech. Tudo gratuito e acessível!
+              Criamos esses recursos pensando em quem está começando e quer
+              crescer na tech. Tudo gratuito e acessível!
             </p>
           </div>
 
@@ -253,11 +331,14 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Code className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-heading">Trilha de Aprendizado 🛤️</CardTitle>
+                <CardTitle className="text-xl font-heading">
+                  Trilha de Aprendizado 🛤️
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  Currículo estruturado do básico ao avançado, com foco no mercado de trabalho paraense.
+                  Currículo estruturado do básico ao avançado, com foco no
+                  mercado de trabalho paraense.
                 </p>
               </CardContent>
             </Card>
@@ -267,11 +348,14 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Users className="w-8 h-8 text-accent" />
                 </div>
-                <CardTitle className="text-xl font-heading">Mentoria Inclusiva 🤝</CardTitle>
+                <CardTitle className="text-xl font-heading">
+                  Mentoria Inclusiva 🤝
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  Programa de mentoria com foco em grupos sub-representados na tecnologia.
+                  Programa de mentoria com foco em grupos sub-representados na
+                  tecnologia.
                 </p>
               </CardContent>
             </Card>
@@ -281,11 +365,14 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Coffee className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-heading">Banco de Oportunidades 💼</CardTitle>
+                <CardTitle className="text-xl font-heading">
+                  Banco de Oportunidades 💼
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  Vagas exclusivas de empresas parceiras comprometidas com diversidade e inclusão.
+                  Vagas exclusivas de empresas parceiras comprometidas com
+                  diversidade e inclusão.
                 </p>
               </CardContent>
             </Card>
@@ -295,11 +382,14 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-gradient-to-br from-accent/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Github className="w-8 h-8 text-accent" />
                 </div>
-                <CardTitle className="text-xl font-heading">Projetos Sociais 🌍</CardTitle>
+                <CardTitle className="text-xl font-heading">
+                  Projetos Sociais 🌍
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  Desenvolva projetos que impactam positivamente nossa comunidade paraense.
+                  Desenvolva projetos que impactam positivamente nossa
+                  comunidade paraense.
                 </p>
               </CardContent>
             </Card>
@@ -307,21 +397,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-4 relative overflow-hidden">
+      {/* CTA Section IS HIDDEN */}
+      <section
+        className="py-24 px-4 relative overflow-hidden"
+        style={{ display: "none" }}
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10"></div>
         <div className="container mx-auto text-center max-w-4xl relative">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 font-heading">Sua jornada tech começa aqui! 🌟</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 font-heading">
+            Sua jornada tech começa aqui! 🌟
+          </h2>
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-            Não importa sua idade, formação ou experiência - se você tem vontade de aprender e crescer, tem espaço aqui!
-            Estamos construindo um <strong>Pará mais tecnológico, diverso e próspero</strong> para todas as pessoas.
+            Não importa sua idade, formação ou experiência - se você tem vontade
+            de aprender e crescer, tem espaço aqui! Estamos construindo um{" "}
+            <strong>Pará mais tecnológico, diverso e próspero</strong> para
+            todas as pessoas.
             <br />
             <span className="text-primary font-semibold">
               Juntos, vamos democratizar a tecnologia na nossa região! 💪
             </span>
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
+            <Button
+              size="lg"
+              className="text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
+            >
               <Users className="mr-2 w-5 h-5" />
               Começar minha transformação 🚀
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -346,11 +446,23 @@ export default function HomePage() {
               <div className="flex items-center gap-3 mb-6">
                 <svg width="32" height="32" viewBox="0 0 100 100">
                   <defs>
-                    <linearGradient id="footer-blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient
+                      id="footer-blue-gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
                       <stop offset="0%" stopColor="#306998" />
                       <stop offset="100%" stopColor="#4B8BBE" />
                     </linearGradient>
-                    <linearGradient id="footer-yellow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient
+                      id="footer-yellow-gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
                       <stop offset="0%" stopColor="#FFD43B" />
                       <stop offset="100%" stopColor="#FFE873" />
                     </linearGradient>
@@ -369,31 +481,45 @@ export default function HomePage() {
                 <h3 className="font-bold text-lg font-heading">Python Pará</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Uma comunidade feita por pessoas reais, para pessoas reais. Aqui a gente cresce junto, aprende junto e
-                se diverte junto! 🐍💚
+                Uma comunidade feita por pessoas reais, para pessoas reais. Aqui
+                a gente cresce junto, aprende junto e se diverte junto! 🐍💚
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 font-heading text-lg">Eventos</h4>
+              <h4 className="font-semibold mb-6 font-heading text-lg">
+                Eventos
+              </h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Dojos
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Meetups
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Live Codings
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Workshops
                   </a>
                 </li>
@@ -401,25 +527,39 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 font-heading text-lg">Recursos</h4>
+              <h4 className="font-semibold mb-6 font-heading text-lg">
+                Recursos
+              </h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Tutoriais
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Projetos
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Mentoria
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Fórum
                   </a>
                 </li>
@@ -427,7 +567,9 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 font-heading text-lg">Conecte-se</h4>
+              <h4 className="font-semibold mb-6 font-heading text-lg">
+                Conecte-se
+              </h4>
               <div className="flex gap-4">
                 <Button
                   variant="outline"
@@ -455,10 +597,12 @@ export default function HomePage() {
           </div>
 
           <div className="border-t mt-12 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 Python Pará. Democratizando tecnologia e transformando vidas no Pará. 🐍💚✊</p>
+            <p>
+              &copy; 2025 Python Pará. Democratizando tecnologia no Pará. 🐍💚✊
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
