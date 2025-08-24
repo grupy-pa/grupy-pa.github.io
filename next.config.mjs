@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/site' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/site' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/grupy-pa.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/grupy-pa.github.io' : '',
   eslint: {
     ignoreDuringBuilds: true,
   },
