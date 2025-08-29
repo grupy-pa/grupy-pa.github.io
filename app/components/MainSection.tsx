@@ -1,16 +1,5 @@
 import {
-  Calendar,
-  Users,
-  Code,
-  Coffee,
-  ArrowRight,
   Github,
-  Twitter,
-  Mail,
-  MapPin,
-  ChartArea,
-  Clock,
-  Star,
   Instagram,
   MessageCircle,
   Send,
@@ -71,6 +60,17 @@ export default function () {
             <Instagram className="w-6 h-6" />
           </a>
         </div>
+
+        {/* CTA para Rock do Ido */}
+        <div className="mt-10">
+          <a
+            href="/rockdoido"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full 
+              bg-gradient-to-r from-[#306998] via-[#FFD43B] to-[#FF4500] 
+              text-black font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition"
+          >🔥 Rock Doido 🔥</a>
+        </div>
+
       </div>
     </section>
   );
