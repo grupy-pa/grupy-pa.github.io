@@ -1,9 +1,4 @@
-import {
-  Github,
-  Instagram,
-  MessageCircle,
-  Send,
-} from "lucide-react";
+import { Github, Instagram, MessageCircle, Send } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function () {
@@ -12,14 +7,12 @@ export default function () {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       <div className="container mx-auto text-center max-w-5xl relative">
         <div className="flex justify-center mb-8">
-          <img
-            width={100}
-            src="https://pa.python.org.br/python.png"
-          />
+          <img width={100} src="https://pa.python.org.br/python.png" />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">Python Pará</h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
-          Comunidade de usuários e desenvolvedores que utilizam Python no Pará 🏳️‍🌈
+          Comunidade de usuários e desenvolvedores que utilizam Python no Pará
+          🏳️‍🌈
         </p>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
           Conecte-se
@@ -62,28 +55,28 @@ export default function () {
         </div>
 
         <div className="mt-10 text-center">
-  <a
-    href="/rockdoido"
-    className="inline-flex items-center gap-2 px-6 py-3 rounded-full 
+          <a
+            href="/trajetoria"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full 
       bg-[#306998]/10 text-[#306998] font-medium 
       border border-[#306998]/30 
       hover:bg-[#306998]/20 hover:border-[#306998]/40 
       transition-colors duration-300"
-  >
-    Conheça a trajetória da comunidade Python Pará
-  </a>
-</div>
+          >
+            Conheça a trajetória da comunidade Python Pará
+          </a>
+        </div>
 
-        
         <div className="mt-10">
           <a
             href="/rockdoido"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full 
               bg-gradient-to-r from-[#306998] via-[#FFD43B] to-[#FF4500] 
               text-black font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition"
-          >🔥 Rock Doido 🔥</a>
+          >
+            🔥 Rock Doido 🔥
+          </a>
         </div>
-
       </div>
     </section>
   );
