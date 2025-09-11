@@ -61,7 +61,20 @@ export default function () {
           </a>
         </div>
 
-        {/* CTA para Rock do Ido */}
+        <div className="mt-10 text-center">
+  <a
+    href="/rockdoido"
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-full 
+      bg-[#306998]/10 text-[#306998] font-medium 
+      border border-[#306998]/30 
+      hover:bg-[#306998]/20 hover:border-[#306998]/40 
+      transition-colors duration-300"
+  >
+    Conheça a trajetória da comunidade Python Pará
+  </a>
+</div>
+
+        
         <div className="mt-10">
           <a
             href="/rockdoido"
