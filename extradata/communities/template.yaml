@@ -1,0 +1,30 @@
+id: grupy-pa 
+# Identificador único da comunidade dentro do sistema/plataforma.
+# Deve ser curto, sem espaços e não pode se repetir com o ID de outra comunidade.
+# Aqui usamos "grupy-pa", que identifica claramente o Grupo de Usuários de Python do Pará.
+
+name: "Grupo de Usuários de Python - PA" 
+# Nome oficial da comunidade.
+# Esse nome será exibido para os usuários em listas, páginas públicas e eventos.
+# É importante ser claro e descritivo, indicando tanto a tecnologia (Python)
+# quanto a localização geográfica (PA - Pará).
+
+logo_url: "https://github.com/grupy-pa.png" 
+# URL da imagem de perfil ou logotipo da comunidade.
+# Normalmente usada em páginas públicas, cards, eventos e redes sociais.
+# Aqui está sendo utilizada a imagem de perfil do GitHub do Grupy-PA,
+# o que garante que o logo esteja sempre atualizado e acessível.
+
+link: "https://github.com/grupy-pa.png" 
+# Link principal da comunidade.
+# Idealmente, deve apontar para o site oficial, repositório central,
+# organização no GitHub ou página com informações de contato.
+# Nesse caso, está apontando para o GitHub do Grupy-PA,
+# onde geralmente ficam projetos, materiais, eventos e contribuições da comunidade.
+
+short_description: "2Grupo domunidade 12"
+description: "2Grupo domunidade 12"
+social:
+  - id: ''
+    name: ''
+    url: ''

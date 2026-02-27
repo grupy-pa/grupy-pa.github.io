@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ page.title|striptags }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <!-- Header do Evento -->
+    <div class="col-lg-10 mb-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{ SITEURL }}/" class="text-decoration-none text-muted">Início</a></li>
+          <li class="breadcrumb-item"><a href="{{ SITEURL }}/#proximos-eventos" class="text-decoration-none text-muted">Eventos</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        </ol>
+      </nav>
+      
+      <div class="card border-0 shadow-sm event-header-card mt-3" style="background: linear-gradient(135deg, var(--gp-primary) 0%, #2b5d88 100%); color: white; border-radius: var(--gp-radius);">
+        <div class="card-body p-5">
+          <h1 class="display-4 fw-bold mb-3 text-white">{{ page.title }}</h1>
+          {% if page.summary %}
+            <p class="lead opacity-75 mb-4">{{ page.summary|striptags }}</p>
+          {% endif %}
+          
+          <div class="d-flex flex-wrap gap-4 mt-4">
+            {% if page.date %}
+            <div class="d-flex align-items-center">
+              <i class="bi bi-calendar-event fs-4 me-2"></i>
+              <div>
+                <small class="text-uppercase fw-semibold d-block" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--gp-secondary);">Data</small>
+                <span class="fs-5">{{ page.date.strftime('%d/%m/%Y') }}</span>
+              </div>
+            </div>
+            {% endif %}
+            
+            {% if page.location %}
+            <div class="d-flex align-items-center">
+              <i class="bi bi-geo-alt fs-4 me-2"></i>
+              <div>
+                <small class="text-uppercase fw-semibold d-block" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--gp-secondary);">Local</small>
+                <span class="fs-5">{{ page.location }}</span>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo do Evento -->
+    <div class="col-lg-10">
+      <article class="card shadow-sm border" style="border-radius: var(--gp-radius);">
+        <div class="card-body p-5 entry-content">
+          {{ page.content }}
+        </div>
+      </article>
+
+      {% if page.registration_link %}
+      <div class="text-center mt-5">
+        <a href="{{ page.registration_link }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold shadow-lg" style="transition: transform 0.2s;">
+          Inscreva-se Agora <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,81 @@
+<div class="container py-4">
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h2 class="fw-bold mt-2 mb-3">Comunidades</h2>
+      <p class="text-muted col-lg-6 text-center mx-auto">
+        Comunidades parceiras que promovem a inclusão e o crescimento da tecnologia na região.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    {% if COMMUNITIES %} {% for id, name, logo_url, link, short_description,
+    description, social in COMMUNITIES %}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+      <!-- Avatar -->
+      <a href="{{ link }}" target="_blank">
+        <img
+          src="{{ logo_url }}"
+          alt="Avatar da comunidade {{ name }}"
+          class="img-fluid rounded-circle shadow mb-3"
+          width="90"
+          height="90"
+        />
+      </a>
+
+      <!-- Nome -->
+      <h5 class="fw-bold mb-1">{{ name }}</h5>
+      <small class="text-muted d-block mb-3"> {{ short_description }} </small>
+
+      <!-- Redes sociais -->
+      <div class="d-flex justify-content-center gap-3">
+        <a
+          href="https://github.com/grupy-pa"
+          class="text-dark fs-6"
+          aria-label="GitHub"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/grupy_pa"
+          class="text-danger fs-6"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com"
+          class="text-primary fs-6"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a
+          href="https://twitter.com"
+          class="text-info fs-6"
+          aria-label="X / Twitter"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="bi bi-twitter-x"></i>
+        </a>
+      </div>
+    </div>
+    {% endfor %} {% endif %}
+  </div>
+  <div class="row mt-5">
+    <div class="col text-center">
+      <h3 class="fw-bold mb-3">Quer contribuir?</h3>
+      <p class="text-muted mb-4">Sua comunidade pode fazer parte desta rede de colaboração.</p>
+      <a href="#contact" class="btn btn-primary">Entre em contato</a>
+    </div>
+  </div>
+</div>
