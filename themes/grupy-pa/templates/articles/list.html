@@ -1,0 +1,51 @@
+<section class="container py-5">
+  <!-- Cabeçalho -->
+  <div class="row mb-5">
+    <div class="col text-center">
+      <span class="text-uppercase text-primary fw-semibold small"> Blog </span>
+      <h2 class="fw-bold mt-2 mb-3">Conteúdos da Comunidade</h2>
+      <p class="text-muted col-lg-6 mx-auto">
+        Artigos, tutoriais e novidades sobre Python, tecnologia e a comunidade
+        GruPy PA.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    {% if articles %} {% for article in articles_page.object_list if article.type == "article" %}
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article
+        class="card h-100 border-0 shadow-sm blog-card blog-card--no-image"
+      >
+        <div class="card-body d-flex flex-column p-4">
+          
+          <div class="d-flex align-items-center text-muted small mb-2">
+            <i class="bi bi-calendar3 me-2"></i>
+            {{ article.date.strftime('%d/%m/%Y') }}
+          </div>
+
+          <h5 class="card-title fw-semibold mb-3">
+            {{ article.title }} {{ article.thumb }}
+          </h5>
+
+          <p class="card-text text-muted flex-grow-1">
+            Estamos com chamada aberta para palestrantes dos próximos eventos.
+            Venha compartilhar conhecimento com a comunidade!
+          </p>
+
+          <a
+            href="{{ SITEURL }}/{{ article.url }}"
+            class="mt-auto fw-semibold text-decoration-none"
+          >
+            Ver detalhes →
+          </a>
+          {% if article.tags %}<p>tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge bg-secondary mb-3 align-self-start mt-3">
+              {{ tag | escape }}
+            </span></a> {% endfor %}</p>{% endif %}
+        </div>
+      </article>
+    </div>
+    {% endfor %} {% endif %}
+  </div>
+</section>

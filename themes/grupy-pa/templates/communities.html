@@ -1,0 +1,6 @@
+{% if COMMUNITIES %}
+    {% for name, image_url, link in COMMUNITIES %}
+        <img src="{{ image_url }}" alt="{{ name }}">
+        <li><a href="{{ link }}">{{ name }}</a></li>
+    {% endfor %}
+{% endif %}

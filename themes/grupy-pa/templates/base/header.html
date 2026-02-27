@@ -1,0 +1,38 @@
+<header class="site-header">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <!-- Logo -->
+        <a href="{{ SITEURL }}/" class="d-inline-block logo-link">
+          <img
+            src="/images/grupy-pa.png"
+            alt="Logo GruPy PA"
+            width="80"
+            height="80"
+            class="mb-4 logo-img shadow-sm rounded-circle"
+          />
+        </a>
+
+        <!-- Nome -->
+        <h1 class="fw-bold display-4 site-title mb-3">GruPy Pará</h1>
+
+        <!-- Descrição -->
+        <p class="lead mb-4 site-subtitle">
+          Comunidade de usuários e desenvolvedores que utilizam
+          <strong>Python</strong> no Pará <span class="flag">🏳️‍🌈</span>
+        </p>
+
+        <div class="social-wrapper mb-4 d-flex justify-content-center align-items-center gap-3">
+          {% include "base/social_links.html" %}
+          <button id="theme-toggle" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 44px; height: 44px; border-color: var(--gp-border-color);" aria-label="Alternar Tema">
+            <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+          </button>
+        </div>
+
+        <p class="mt-4">
+          <a href="#proximos-eventos" class="btn btn-primary rounded-pill px-4 py-2 upcoming-btn shadow-sm">Próximos eventos</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</header>

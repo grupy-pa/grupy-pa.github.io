@@ -1,0 +1,282 @@
+/*
+	Name: GruPy PA Modern Elegant Theme
+*/
+
+/* --- Variables & Theming --- */
+:root {
+  /* Colors */
+  --gp-primary: #3776AB; /* Python Blue */
+  --gp-secondary: #FFD43B; /* Python Yellow */
+  --gp-accent: #C74350;
+  
+  --gp-bg-color: #FAFAFA;
+  --gp-text-color: #212529;
+  --gp-muted: #6c757d;
+  
+  --gp-header-bg: #FFFFFF;
+  --gp-card-bg: #FFFFFF;
+  
+  --gp-border-color: #e9ecef;
+  
+  /* Typography */
+  --gp-font-sans: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Shadows */
+  --gp-shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+  --gp-shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+  --gp-shadow-hover: 0 10px 24px rgba(0,0,0,0.1);
+  
+  /* Borders */
+  --gp-radius: 16px;
+  --gp-radius-sm: 8px;
+}
+
+[data-bs-theme="dark"] {
+  --gp-bg-color: #121212;
+  --gp-text-color: #f8f9fa;
+  --gp-muted: #adb5bd;
+  --gp-header-bg: #1c1c1c;
+  --gp-card-bg: #1e1e1e;
+  --gp-border-color: #2b2b2b;
+  --gp-shadow-sm: 0 2px 8px rgba(0,0,0,0.2);
+  --gp-shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+  --gp-shadow-hover: 0 10px 24px rgba(0,0,0,0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gp-bg-color: #121212;
+    --gp-text-color: #f8f9fa;
+    --gp-muted: #adb5bd;
+    --gp-header-bg: #1c1c1c;
+    --gp-card-bg: #1e1e1e;
+    --gp-border-color: #2b2b2b;
+    --gp-shadow-sm: 0 2px 8px rgba(0,0,0,0.2);
+    --gp-shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+    --gp-shadow-hover: 0 10px 24px rgba(0,0,0,0.5);
+  }
+}
+
+/* --- Global Setup --- */
+body {
+  font-family: var(--gp-font-sans);
+  background-color: var(--gp-bg-color);
+  color: var(--gp-text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--gp-text-color);
+}
+
+a {
+  color: var(--gp-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2b5d88;
+}
+
+[data-bs-theme="dark"] a { color: #5a9fd4; }
+[data-bs-theme="dark"] a:hover { color: #8bbcef; }
+
+@media (prefers-color-scheme: dark) {
+  a { color: #5a9fd4; }
+  a:hover { color: #8bbcef; }
+}
+
+/* --- Header Section --- */
+.site-header {
+  background-color: var(--gp-header-bg);
+  border-bottom: 1px solid var(--gp-border-color);
+  padding: 4rem 0 3rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.logo-img {
+  border: 4px solid var(--gp-header-bg);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.site-title {
+  background: linear-gradient(135deg, var(--gp-primary) 0%, #2b5d88 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-bs-theme="dark"] .site-title {
+  background: linear-gradient(135deg, #5a9fd4 0%, var(--gp-secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-title {
+    background: linear-gradient(135deg, #5a9fd4 0%, var(--gp-secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.site-subtitle {
+  color: var(--gp-muted);
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.flag {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.upcoming-btn {
+  background-color: var(--gp-primary);
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.upcoming-btn:hover {
+  background-color: #2b5d88;
+  transform: translateY(-2px);
+  box-shadow: var(--gp-shadow-md);
+}
+
+/* --- Main Layout --- */
+.site-main {
+  min-height: 60vh;
+}
+
+/* --- Cards (Articles & Events) --- */
+.card {
+  background-color: var(--gp-card-bg);
+  border: 1px solid var(--gp-border-color) !important;
+  border-radius: var(--gp-radius);
+  box-shadow: var(--gp-shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--gp-shadow-hover);
+}
+
+.card-title {
+  color: var(--gp-text-color);
+  line-height: 1.3;
+}
+
+.card-text {
+  color: var(--gp-muted);
+}
+
+.badge {
+  border-radius: var(--gp-radius-sm);
+  font-weight: 500;
+  padding: 0.5em 0.75em;
+}
+
+/* --- Social Links (Reusing header base format) --- */
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--gp-bg-color);
+  color: var(--gp-text-color);
+  font-size: 1.25rem;
+  box-shadow: var(--gp-shadow-sm);
+  transition: all 0.2s ease;
+  border: 1px solid var(--gp-border-color);
+}
+
+.social-item a:hover {
+  background-color: var(--gp-primary);
+  color: #fff;
+  transform: translateY(-3px);
+  border-color: var(--gp-primary);
+}
+
+/* --- Single Article View --- */
+.body article {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--gp-card-bg);
+  padding: 3rem;
+  border-radius: var(--gp-radius);
+  box-shadow: var(--gp-shadow-sm);
+  border: 1px solid var(--gp-border-color);
+}
+
+.entry-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.entry-content p {
+  font-size: 1.125rem;
+  color: var(--gp-text-color);
+  margin-bottom: 1.5rem;
+}
+
+.entry-content pre {
+  background-color: #f1f3f5;
+  padding: 1.5rem;
+  border-radius: var(--gp-radius-sm);
+  overflow-x: auto;
+  font-size: 0.9em;
+  border: 1px solid var(--gp-border-color);
+}
+
+[data-bs-theme="dark"] .entry-content pre {
+  background-color: #212529;
+}
+
+@media (prefers-color-scheme: dark) {
+  .entry-content pre {
+    background-color: #212529;
+  }
+}
+
+.entry-content img {
+  max-width: 100%;
+  border-radius: var(--gp-radius-sm);
+  margin: 2rem 0;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--gp-card-bg);
+  border-top: 1px solid var(--gp-border-color);
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--gp-muted);
+  margin-top: 4rem;
+}

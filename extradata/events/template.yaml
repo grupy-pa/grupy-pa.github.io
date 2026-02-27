@@ -1,0 +1,29 @@
+# Template para eventos Grupy-PA
+id: evento-001
+title: "Nome do Evento"
+start_date: "2024-01-15"
+end_date: "2024-01-15"
+start_time: "19:00"
+end_time: "19:00"
+duration_minutes: 120
+location: "Local/Online"
+description: "Descrição breve do evento"
+image_url: "caminho/da/imagem.jpg"
+tags:
+  - python
+  - workshop
+speakers:
+  - name: "Nome do Palestrante"
+    bio: "Breve biografia"
+    social_links:
+      twitter: ""
+      github: ""
+registration_url: "https://link-para-registro.com"
+status: "scheduled"  # scheduled, completed, cancelled
+links:
+  - title: "Slides"
+    url: ""
+  - title: "Video"
+    url: ""
+  - title: "Repositório"
+    url: ""
