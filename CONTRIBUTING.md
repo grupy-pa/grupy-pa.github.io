@@ -60,23 +60,68 @@ O Pelican lê páginas e posts na linguagem Markdown (`.md`).
 
 ## 🎟️ Como Adicionar um Evento
 
-A arquitetura do site separa formalmente eventos de postagens no sistema de templates do Pelican. Todo evento deve ficar na pasta `events`.
+Os eventos do GruPy PA são gerenciados através de arquivos YAML na pasta `extradata/events/`. Cada evento possui metadados estruturados que facilitam a organização e exibição no site.
 
-1. Crie o arquivo na pasta `content/events/`:
+### Passo a Passo:
+
+1. **Copie o template de evento:**
    ```bash
-   touch content/events/meetup-marco.md
+   cp extradata/events/template.yaml extradata/events/meu-evento.yaml
    ```
-2. Preencha os metadados de página associando-os ao template correto:
-   ```md
-   Title: 1º Meetup GruPy PA do Ano
-   Date: 2026-03-15
-   Location: Hangar Centro de Convenções, Belém - PA
-   Template: event
-   Registration_Link: https://sympla.com.br/exemplo
 
-   Venha participar do nosso primeiro meetup presencial...
+2. **Preencha os campos do arquivo YAML:**
+   ```yaml
+   id: meetup-marco-2026
+   title: "1º Meetup GruPy PA do Ano"
+   start_date: "2026-03-15"
+   end_date: "2026-03-15"
+   start_time: "19:00"
+   end_time: "21:00"
+   duration_minutes: 120
+   location: "Hangar Centro de Convenções, Belém - PA"
+   description: "Venha participar do nosso primeiro meetup presencial do ano!"
+   image_url: "images/meetup-marco.jpg"
+   tags:
+     - python
+     - meetup
+     - networking
+   speakers:
+     - name: "João Silva"
+       bio: "Desenvolvedor Python há 5 anos"
+       social_links:
+         twitter: "joaosilva"
+         github: "joaosilva"
+   registration_url: "https://sympla.com.br/exemplo"
+   status: "scheduled"  # scheduled, completed, cancelled
+   links:
+     - title: "Slides"
+       url: ""
+     - title: "Video"
+       url: ""
    ```
-*(Nota: O parâmetro `Template: event` força o Pelican a usar nosso layout bonito especifico para eventos!)*
+
+### Campos Obrigatórios:
+- **id**: Identificador único do evento (use formato kebab-case)
+- **title**: Nome do evento
+- **start_date** e **end_date**: Datas no formato YYYY-MM-DD
+- **start_time** e **end_time**: Horários no formato HH:MM
+- **location**: Local do evento (presencial ou "Online")
+- **description**: Descrição breve do evento
+- **status**: Estado do evento (scheduled, completed, cancelled)
+
+### Campos Opcionais:
+- **image_url**: Caminho para imagem do evento
+- **tags**: Lista de tags relacionadas
+- **speakers**: Lista de palestrantes com nome, bio e redes sociais
+- **registration_url**: Link para inscrição
+- **links**: Links relacionados (slides, vídeos, repositórios)
+
+### Dicas:
+- Use um **id** descritivo e único para cada evento
+- Mantenha a **description** concisa e informativa
+- Adicione **tags** relevantes para facilitar a busca
+- Atualize o **status** após o evento (de "scheduled" para "completed")
+- Adicione **links** de materiais após o evento acontecer
 
 ---
 
